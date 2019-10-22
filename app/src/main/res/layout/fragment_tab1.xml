@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_view"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        >
+        <Button
+            android:id="@+id/btnBackup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BackUp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:id="@+id/btnRetrieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/btnBackup"
+            android:text="Retrieve"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
